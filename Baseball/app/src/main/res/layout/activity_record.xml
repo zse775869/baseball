@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.home.baseball.Record">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="請輸入本場表現"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="打數"
+        android:id="@+id/AtBat"
+        android:layout_marginTop="41dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="安打"
+        android:id="@+id/Hits"
+        android:textSize="25dp"
+        android:layout_below="@+id/AtBat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="保送"
+        android:id="@+id/Walks"
+        android:textSize="25dp"
+        android:layout_below="@+id/Hits"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="犧牲"
+        android:id="@+id/SacrificeHit"
+        android:textSize="25dp"
+        android:layout_below="@+id/Walks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="失誤"
+        android:id="@+id/Errors"
+        android:textSize="25dp"
+        android:layout_below="@+id/SacrificeHit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="守備機會"
+        android:id="@+id/TotalChances"
+        android:textSize="25dp"
+        android:layout_below="@+id/Errors"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="打擊率"
+        android:id="@+id/tv_avg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="守備率"
+        android:id="@+id/tv_da"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tv_avg"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/ab"
+        android:layout_alignTop="@+id/AtBat"
+        android:layout_toRightOf="@+id/AtBat"
+        android:layout_toEndOf="@+id/AtBat" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/h"
+        android:layout_alignTop="@+id/Hits"
+        android:layout_toRightOf="@+id/Hits"
+        android:layout_toEndOf="@+id/Hits" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/w"
+        android:layout_alignTop="@+id/Walks"
+        android:layout_toRightOf="@+id/Walks"
+        android:layout_toEndOf="@+id/Walks" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/sh"
+        android:layout_alignTop="@+id/SacrificeHit"
+        android:layout_toRightOf="@+id/SacrificeHit"
+        android:layout_toEndOf="@+id/SacrificeHit" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/e"
+        android:layout_alignTop="@+id/Errors"
+        android:layout_toRightOf="@+id/Errors"
+        android:layout_toEndOf="@+id/Errors" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/tc"
+        android:layout_alignTop="@+id/TotalChances"
+        android:layout_toRightOf="@+id/TotalChances"
+        android:layout_toEndOf="@+id/TotalChances" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="請輸入數字"
+        android:ems="10"
+        android:id="@+id/outs"
+        android:layout_alignTop="@+id/out"
+        android:layout_toRightOf="@+id/out"
+        android:layout_toEndOf="@+id/out" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_avg_show"
+        android:layout_alignBottom="@+id/tv_avg"
+        android:layout_toRightOf="@+id/tv_avg"
+        android:layout_toEndOf="@+id/tv_avg" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_da_show"
+        android:layout_above="@+id/tv_avg"
+        android:layout_toRightOf="@+id/tv_avg"
+        android:layout_toEndOf="@+id/tv_avg" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:id="@+id/btok"
+        android:layout_alignBaseline="@+id/tv_da"
+        android:layout_alignBottom="@+id/tv_da"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="出局數"
+        android:id="@+id/out"
+        android:textSize="25dp"
+        android:layout_below="@+id/TotalChances"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.home.baseball.KeyName">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:id="@+id/btok"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="捕手"
+        android:id="@+id/tvch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="投手"
+        android:id="@+id/tvpc"
+        android:layout_below="@+id/tvch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="一壘手"
+        android:id="@+id/tvb1"
+        android:layout_below="@+id/tvpc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="二壘手"
+        android:id="@+id/tvb2"
+        android:layout_below="@+id/tvb1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="游擊手"
+        android:id="@+id/tvss"
+        android:layout_below="@+id/tvb2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="三壘手"
+        android:id="@+id/tvb3"
+        android:layout_below="@+id/tvss"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="左外手"
+        android:id="@+id/tvlf"
+        android:layout_below="@+id/tvb3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="中外手"
+        android:id="@+id/tvcf"
+        android:layout_below="@+id/tvlf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="右外手"
+        android:id="@+id/tvrf"
+        android:layout_below="@+id/tvcf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etch"
+        android:layout_alignTop="@+id/tvch"
+        android:layout_toRightOf="@+id/tvch"
+        android:layout_toEndOf="@+id/tvch" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etpc"
+        android:layout_alignTop="@+id/tvpc"
+        android:layout_toRightOf="@+id/tvpc"
+        android:layout_toEndOf="@+id/tvpc" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etb1"
+        android:layout_alignTop="@+id/tvb1"
+        android:layout_toRightOf="@+id/tvb1"
+        android:layout_toEndOf="@+id/tvb1" />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etb2"
+        android:layout_alignTop="@+id/tvb2"
+        android:layout_toRightOf="@+id/tvb2"
+        android:layout_toEndOf="@+id/tvb2" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etss"
+        android:layout_alignTop="@+id/tvss"
+        android:layout_toRightOf="@+id/tvss"
+        android:layout_toEndOf="@+id/tvss" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etb3"
+        android:layout_alignTop="@+id/tvb3"
+        android:layout_toRightOf="@+id/tvb3"
+        android:layout_toEndOf="@+id/tvb3" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etlf"
+        android:layout_alignTop="@+id/tvlf"
+        android:layout_toRightOf="@+id/tvlf"
+        android:layout_toEndOf="@+id/tvlf" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etcf"
+        android:layout_alignTop="@+id/tvcf"
+        android:layout_toRightOf="@+id/tvcf"
+        android:layout_toEndOf="@+id/tvcf" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="請輸入名字!"
+        android:ems="10"
+        android:id="@+id/etrf"
+        android:layout_alignTop="@+id/tvrf"
+        android:layout_toRightOf="@+id/tvrf"
+        android:layout_toEndOf="@+id/tvrf" />
+
+</RelativeLayout>
